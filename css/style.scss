@@ -189,3 +189,139 @@ main{
         }
     }
 }
+
+/************* policy page ************/
+.tattoo_policy{
+    margin-bottom: 96px;
+    .h2_title{
+        margin-bottom: 32px;
+    }
+    .h3_title{
+        margin-top: 56px;
+    }
+    .h3_body{
+        margin: 16px 0;
+    }
+    .tattoo_imgs{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        img{
+            width: 23%;
+        }
+    }
+}
+
+.piercing_policy{
+    .h2_title{
+        margin-bottom: 32px;
+    }
+    .h3_title{
+        margin-top: 56px;
+    }
+    .h3_body{
+        margin: 16px 0;
+    }
+    .tattoo_imgs{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        img{
+            width: 23%;
+        }
+    }
+}
+
+
+/************ waiver,aftercare page ***************/
+main{
+    .waivers{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 32px;
+        .waiver{
+            width: 49%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            img{
+                width: 100%;
+            }
+            .h2_title{
+                margin: 16px 0 32px;
+            }
+            .h2_body{
+                a{
+                    color: black;
+                    i{
+                        margin-left: 10px;
+                    }
+                }
+            }
+            .piercing_after{
+                display: flex;
+                flex-direction: column;
+                .body_after{
+                    margin-bottom: 16px;
+                }
+            }
+        }
+    }
+}
+
+/******************* booking page *************************/
+main{
+
+    .contact_method{
+        margin-top: 32px;
+        display: flex;
+        justify-content: space-between;
+
+        .methods{
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+            padding: 46px 0;
+            width: 32%;
+            place-items: center;
+            i{
+                font-size: 35px;
+                margin-bottom: 24px;
+            }
+            .h2_body{
+                margin-bottom: 8px;
+            }
+        }
+    }
+    .contact_artist{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 32px;
+        .artists{
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+            width: 32%;
+            img{
+                width: 100%;
+            }
+            .artist_contact{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                place-items: center;
+                padding: 55px 0;
+                .name{
+                    margin-bottom: 16px;
+                }
+                .email{
+                    margin-bottom: 8px;
+                }
+                i{
+                    margin-right: 10px;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

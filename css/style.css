@@ -216,4 +216,202 @@ main .covid_policies .h3_body {
 main .covid_policies .h3_body li {
   margin-bottom: 8px;
 }
+
+/************* policy page ************/
+.tattoo_policy {
+  margin-bottom: 96px;
+}
+
+.tattoo_policy .h2_title {
+  margin-bottom: 32px;
+}
+
+.tattoo_policy .h3_title {
+  margin-top: 56px;
+}
+
+.tattoo_policy .h3_body {
+  margin: 16px 0;
+}
+
+.tattoo_policy .tattoo_imgs {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tattoo_policy .tattoo_imgs img {
+  width: 23%;
+}
+
+.piercing_policy .h2_title {
+  margin-bottom: 32px;
+}
+
+.piercing_policy .h3_title {
+  margin-top: 56px;
+}
+
+.piercing_policy .h3_body {
+  margin: 16px 0;
+}
+
+.piercing_policy .tattoo_imgs {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.piercing_policy .tattoo_imgs img {
+  width: 23%;
+}
+
+/************ waiver,aftercare page ***************/
+main .waivers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 32px;
+}
+
+main .waivers .waiver {
+  width: 49%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .waivers .waiver img {
+  width: 100%;
+}
+
+main .waivers .waiver .h2_title {
+  margin: 16px 0 32px;
+}
+
+main .waivers .waiver .h2_body a {
+  color: black;
+}
+
+main .waivers .waiver .h2_body a i {
+  margin-left: 10px;
+}
+
+main .waivers .waiver .piercing_after {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .waivers .waiver .piercing_after .body_after {
+  margin-bottom: 16px;
+}
+
+/******************* booking page *************************/
+main .contact_method {
+  margin-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .contact_method .methods {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid black;
+  padding: 46px 0;
+  width: 32%;
+  place-items: center;
+}
+
+main .contact_method .methods i {
+  font-size: 35px;
+  margin-bottom: 24px;
+}
+
+main .contact_method .methods .h2_body {
+  margin-bottom: 8px;
+}
+
+main .contact_artist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 32px;
+}
+
+main .contact_artist .artists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid black;
+  width: 32%;
+}
+
+main .contact_artist .artists img {
+  width: 100%;
+}
+
+main .contact_artist .artists .artist_contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  place-items: center;
+  padding: 55px 0;
+}
+
+main .contact_artist .artists .artist_contact .name {
+  margin-bottom: 16px;
+}
+
+main .contact_artist .artists .artist_contact .email {
+  margin-bottom: 8px;
+}
+
+main .contact_artist .artists .artist_contact i {
+  margin-right: 10px;
+  font-size: 18px;
+}
 /*# sourceMappingURL=style.css.map */
