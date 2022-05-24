@@ -49,6 +49,9 @@ font-family: 'Roboto', sans-serif;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     text-decoration: underline;
+    a{
+        color: white;
+    }
 }
 
 .main_menu{
@@ -79,7 +82,7 @@ font-family: 'Roboto', sans-serif;
 
 .main_header{
     background-color: darkgray;
-    padding: 275px 160px;
+    padding: 275px 10.5%;
     .header_title{
         margin-bottom: 32px;
         font-size: 55px;
@@ -98,7 +101,7 @@ font-family: 'Roboto', sans-serif;
 
 /*************** Main ******************/
 main{
-    padding: 96px 160px;
+    padding: 96px 10.5%;
     .main_title{
         margin-bottom: 32px;
     }
@@ -106,13 +109,13 @@ main{
     .policies{
         margin-top: 56px;
         display: flex;
+        justify-content: space-between;
 
         img{
-            max-width: 584px;
-            max-height: 376px;
-            margin-right: 24px;
+            width: 48%;
         }
         .policy_right{
+            width: 50%;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -138,7 +141,7 @@ main{
 /*************** Footer ******************/
 footer{
     background-color: darkgray;
-    padding: 88px 160px;
+    padding: 88px 10.5%;
     display: flex;
     justify-content: space-between;
 
@@ -147,5 +150,42 @@ footer{
         font-weight: 700;
         font-size: 22.5px;
         border-bottom: 1px solid black;
+    }
+}
+
+
+
+/************** Pages header *****************/
+.page_main_header{
+    background-color: darkgray;
+    padding: 105px 10.5%;
+    .page_header_title{
+        font-size: 55px;
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight: 700;
+    }
+}
+
+
+/************* covid page ************/
+main{
+    .updated{
+        margin-bottom: 96px;
+        .date{
+            margin-bottom: 8px;
+        }
+    }
+
+    .covid_policies{
+        margin-bottom: 96px;
+        .h2_title{
+            margin-bottom: 32px;
+        }
+        .h3_body{
+            padding-left: 24px;
+            li{
+                margin-bottom: 8px;
+            }
+        }
     }
 }

@@ -60,6 +60,10 @@ font-family: 'Roboto', sans-serif;
   text-decoration: underline;
 }
 
+.covid a {
+  color: white;
+}
+
 .main_menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -88,7 +92,7 @@ font-family: 'Roboto', sans-serif;
 
 .main_header {
   background-color: darkgray;
-  padding: 275px 160px;
+  padding: 275px 10.5%;
 }
 
 .main_header .header_title {
@@ -108,7 +112,7 @@ font-family: 'Roboto', sans-serif;
 
 /*************** Main ******************/
 main {
-  padding: 96px 160px;
+  padding: 96px 10.5%;
 }
 
 main .main_title {
@@ -120,15 +124,17 @@ main .policies {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 main .policies img {
-  max-width: 584px;
-  max-height: 376px;
-  margin-right: 24px;
+  width: 48%;
 }
 
 main .policies .policy_right {
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -158,7 +164,7 @@ main .policies .policy_right .read_policy {
 /*************** Footer ******************/
 footer {
   background-color: darkgray;
-  padding: 88px 160px;
+  padding: 88px 10.5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -172,5 +178,42 @@ footer .footer_title {
   font-weight: 700;
   font-size: 22.5px;
   border-bottom: 1px solid black;
+}
+
+/************** Pages header *****************/
+.page_main_header {
+  background-color: darkgray;
+  padding: 105px 10.5%;
+}
+
+.page_main_header .page_header_title {
+  font-size: 55px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+}
+
+/************* covid page ************/
+main .updated {
+  margin-bottom: 96px;
+}
+
+main .updated .date {
+  margin-bottom: 8px;
+}
+
+main .covid_policies {
+  margin-bottom: 96px;
+}
+
+main .covid_policies .h2_title {
+  margin-bottom: 32px;
+}
+
+main .covid_policies .h3_body {
+  padding-left: 24px;
+}
+
+main .covid_policies .h3_body li {
+  margin-bottom: 8px;
 }
 /*# sourceMappingURL=style.css.map */
