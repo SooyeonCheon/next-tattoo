@@ -72,6 +72,9 @@ font-family: 'Roboto', sans-serif;
       justify-content: space-around;
   place-items: center;
   padding: 25px;
+  background-color: white;
+  border-bottom: 1px solid lightgray;
+  width: 100%;
 }
 
 .main_menu .logo span {
@@ -177,7 +180,57 @@ footer .footer_title {
   font-family: 'Oxygen', sans-serif;
   font-weight: 700;
   font-size: 22.5px;
+}
+
+footer .line {
   border-bottom: 1px solid black;
+  margin: 8px 0;
+}
+
+footer .links {
+  width: 30%;
+}
+
+footer .links .link_menu {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+footer .links .link_menu a {
+  text-decoration: none;
+  color: black;
+}
+
+footer .contacts {
+  width: 68%;
+}
+
+footer .contacts .infos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .contacts .infos .sns {
+  margin-top: 18px;
+}
+
+footer .contacts .infos .sns i {
+  font-size: 24px;
+  margin-right: 22px;
+}
+
+footer .contacts .infos .hours {
+  margin-top: 16px;
+}
+
+footer .contacts .infos .hours span {
+  margin-right: 16px;
 }
 
 /************** Pages header *****************/
@@ -193,48 +246,48 @@ footer .footer_title {
 }
 
 /************* covid page ************/
-main .updated {
+.covid-page .updated {
   margin-bottom: 96px;
 }
 
-main .updated .date {
+.covid-page .updated .date {
   margin-bottom: 8px;
 }
 
-main .covid_policies {
+.covid-page .covid_policies {
   margin-bottom: 96px;
 }
 
-main .covid_policies .h2_title {
+.covid-page .covid_policies .h2_title {
   margin-bottom: 32px;
 }
 
-main .covid_policies .h3_body {
+.covid-page .covid_policies .h3_body {
   padding-left: 24px;
 }
 
-main .covid_policies .h3_body li {
+.covid-page .covid_policies .h3_body li {
   margin-bottom: 8px;
 }
 
 /************* policy page ************/
-.tattoo_policy {
+.policy-page .tattoo_policy {
   margin-bottom: 96px;
 }
 
-.tattoo_policy .h2_title {
+.policy-page .tattoo_policy .h2_title {
   margin-bottom: 32px;
 }
 
-.tattoo_policy .h3_title {
+.policy-page .tattoo_policy .h3_title {
   margin-top: 56px;
 }
 
-.tattoo_policy .h3_body {
+.policy-page .tattoo_policy .h3_body {
   margin: 16px 0;
 }
 
-.tattoo_policy .tattoo_imgs {
+.policy-page .tattoo_policy .tattoo_imgs {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -244,23 +297,23 @@ main .covid_policies .h3_body li {
           justify-content: space-between;
 }
 
-.tattoo_policy .tattoo_imgs img {
+.policy-page .tattoo_policy .tattoo_imgs img {
   width: 23%;
 }
 
-.piercing_policy .h2_title {
+.policy-page .piercing_policy .h2_title {
   margin-bottom: 32px;
 }
 
-.piercing_policy .h3_title {
+.policy-page .piercing_policy .h3_title {
   margin-top: 56px;
 }
 
-.piercing_policy .h3_body {
+.policy-page .piercing_policy .h3_body {
   margin: 16px 0;
 }
 
-.piercing_policy .tattoo_imgs {
+.policy-page .piercing_policy .tattoo_imgs {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -270,12 +323,12 @@ main .covid_policies .h3_body li {
           justify-content: space-between;
 }
 
-.piercing_policy .tattoo_imgs img {
+.policy-page .piercing_policy .tattoo_imgs img {
   width: 23%;
 }
 
 /************ waiver,aftercare page ***************/
-main .waivers {
+.after-page .waivers {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -285,7 +338,7 @@ main .waivers {
   margin-top: 32px;
 }
 
-main .waivers .waiver {
+.after-page .waivers .waiver {
   width: 49%;
   text-align: center;
   display: -webkit-box;
@@ -297,23 +350,23 @@ main .waivers .waiver {
           flex-direction: column;
 }
 
-main .waivers .waiver img {
+.after-page .waivers .waiver img {
   width: 100%;
 }
 
-main .waivers .waiver .h2_title {
+.after-page .waivers .waiver .h2_title {
   margin: 16px 0 32px;
 }
 
-main .waivers .waiver .h2_body a {
+.after-page .waivers .waiver .h2_body a {
   color: black;
 }
 
-main .waivers .waiver .h2_body a i {
+.after-page .waivers .waiver .h2_body a i {
   margin-left: 10px;
 }
 
-main .waivers .waiver .piercing_after {
+.after-page .waivers .waiver .piercing_after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -323,12 +376,12 @@ main .waivers .waiver .piercing_after {
           flex-direction: column;
 }
 
-main .waivers .waiver .piercing_after .body_after {
+.after-page .waivers .waiver .piercing_after .body_after {
   margin-bottom: 16px;
 }
 
 /******************* booking page *************************/
-main .contact_method {
+.booking-page .contact_method {
   margin-top: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -338,7 +391,7 @@ main .contact_method {
           justify-content: space-between;
 }
 
-main .contact_method .methods {
+.booking-page .contact_method .methods {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -352,16 +405,16 @@ main .contact_method .methods {
   place-items: center;
 }
 
-main .contact_method .methods i {
+.booking-page .contact_method .methods i {
   font-size: 35px;
   margin-bottom: 24px;
 }
 
-main .contact_method .methods .h2_body {
+.booking-page .contact_method .methods .h2_body {
   margin-bottom: 8px;
 }
 
-main .contact_artist {
+.booking-page .contact_artist {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -371,7 +424,7 @@ main .contact_artist {
   margin-top: 32px;
 }
 
-main .contact_artist .artists {
+.booking-page .contact_artist .artists {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -383,11 +436,11 @@ main .contact_artist .artists {
   width: 32%;
 }
 
-main .contact_artist .artists img {
+.booking-page .contact_artist .artists img {
   width: 100%;
 }
 
-main .contact_artist .artists .artist_contact {
+.booking-page .contact_artist .artists .artist_contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -402,16 +455,210 @@ main .contact_artist .artists .artist_contact {
   padding: 55px 0;
 }
 
-main .contact_artist .artists .artist_contact .name {
+.booking-page .contact_artist .artists .artist_contact .name {
   margin-bottom: 16px;
 }
 
-main .contact_artist .artists .artist_contact .email {
+.booking-page .contact_artist .artists .artist_contact .email {
   margin-bottom: 8px;
 }
 
-main .contact_artist .artists .artist_contact i {
+.booking-page .contact_artist .artists .artist_contact i {
   margin-right: 10px;
   font-size: 18px;
+}
+
+/****************** Contact page *****************/
+.contact-page .contact_method {
+  margin-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact-page .contact_method .methods {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid black;
+  padding: 46px 0;
+  width: 32%;
+  place-items: center;
+}
+
+.contact-page .contact_method .methods i {
+  font-size: 35px;
+  margin-bottom: 24px;
+}
+
+.contact-page .contact_method .methods .h2_body {
+  margin-bottom: 8px;
+}
+
+.contact-page .method_2 {
+  margin: 0;
+}
+
+.contact-page .info {
+  background-color: darkgray;
+  padding: 34px 10.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 96px;
+}
+
+.contact-page .info iframe {
+  width: 60%;
+  height: 400px;
+}
+
+.contact-page .info .hours {
+  width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact-page .info .hours .addr {
+  margin-bottom: 32px;
+}
+
+.contact-page .info .hours .h2_body {
+  margin-bottom: 16px;
+}
+
+.contact-page .info .hours .hour {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.contact-page .info .hours .hour div {
+  margin-right: 24px;
+}
+
+/************** Price page *********************/
+.price-page .h2_title {
+  margin-bottom: 32px;
+}
+
+.price-page .second_title {
+  margin-top: 96px;
+}
+
+.price-page .h3_title {
+  margin: 56px 0 16px;
+}
+
+.price-page .h3_body {
+  margin-bottom: 16px;
+}
+
+.price-page .piercing_img {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.price-page .piercing_img img {
+  width: 100%;
+}
+
+.price-page .piercing_img .zone {
+  border: 1px solid black;
+  margin-top: 0px;
+}
+
+.price-page .piercing_img .zone .zone_price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  place-items: center;
+  padding-bottom: 8px;
+}
+
+.price-page .piercing_img .zone .zone_price .blank {
+  height: 30px;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 14.5px;
+  font-weight: 400;
+}
+
+.price-page table, .price-page tr, .price-page td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.price-page td {
+  padding: 8px 24px;
+}
+
+.price-page .colortd {
+  background-color: #E5E5E5;
+}
+
+/******************** Artist page ************************/
+.artist-page .h2_title {
+  margin-bottom: 32px;
+}
+
+.artist-page .artists {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 24px;
+          column-gap: 24px;
+}
+
+.artist-page .artists .artist_img {
+  position: relative;
+}
+
+.artist-page .artists .artist_img img {
+  width: 100%;
+}
+
+.artist-page .artists .artist_img span {
+  position: absolute;
+  bottom: 29px;
+  left: 32px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 500;
+  font-size: 35px;
+}
+
+.artist-page .second_title {
+  margin-top: 96px;
 }
 /*# sourceMappingURL=style.css.map */
