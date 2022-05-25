@@ -64,6 +64,11 @@ font-family: 'Roboto', sans-serif;
   color: white;
 }
 
+.nav-sticky {
+  position: fixed;
+  z-index: 0;
+}
+
 .main_menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -91,6 +96,12 @@ font-family: 'Roboto', sans-serif;
 
 .main_menu .menus a.bookBtn {
   color: white;
+}
+
+.nav-scroll {
+  position: fixed;
+  -webkit-transform: translateY(-70.5px);
+          transform: translateY(-70.5px);
 }
 
 .main_header {
@@ -643,6 +654,7 @@ footer .contacts .infos .hours span {
 
 .artist-page .artists .artist_img {
   position: relative;
+  z-index: -1;
 }
 
 .artist-page .artists .artist_img img {
