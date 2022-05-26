@@ -653,7 +653,28 @@ footer .contacts .infos .hours span {
   width: 23%;
 }
 
+.w3-content {
+  display: none;
+}
+
+.mySlides {
+  display: none;
+}
+
+.w3-left, .w3-right, .w3-badge {
+  cursor: pointer;
+}
+
+.w3-badge {
+  height: 13px;
+  width: 13px;
+  padding: 0;
+}
+
 @media screen and (max-width: 768px) {
+  .w3-content {
+    display: block;
+  }
   .policy-page .tattoo_policy {
     margin-bottom: 56px;
   }
@@ -667,16 +688,7 @@ footer .contacts .infos .hours span {
     margin: 8px 0;
   }
   .policy-page .tattoo_policy .tattoo_imgs {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .policy-page .tattoo_policy .tattoo_imgs img {
-    width: 23%;
+    display: none;
   }
   .policy-page .piercing_policy .h2_title {
     margin-bottom: 8px;
@@ -688,16 +700,7 @@ footer .contacts .infos .hours span {
     margin: 8px 0;
   }
   .policy-page .piercing_policy .tattoo_imgs {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .policy-page .piercing_policy .tattoo_imgs img {
-    width: 23%;
+    display: none;
   }
 }
 
