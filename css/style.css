@@ -890,9 +890,43 @@ footer .contacts .infos .hours span {
   font-size: 18px;
 }
 
+@media screen and (max-width: 768px) {
+  .booking-page .contact_method {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .booking-page .contact_method .methods {
+    padding: 22px 0;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .booking-page .contact_method .methods i {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+  .booking-page .contact_method .methods .h2_body {
+    margin-bottom: 4px;
+  }
+  .booking-page .contact_artist {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 0;
+  }
+  .booking-page .contact_artist .artists {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .booking-page .contact_artist .artists img {
+    display: none;
+  }
+}
+
 /****************** Contact page *****************/
 .contact-page .contact_method {
-  margin-top: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -976,6 +1010,80 @@ footer .contacts .infos .hours span {
 
 .contact-page .info .hours .hour div {
   margin-right: 24px;
+}
+
+@media screen and (max-width: 1030px) {
+  .contact-page .info iframe {
+    width: 50%;
+  }
+  .contact-page .info .hours {
+    width: 45%;
+  }
+  .contact-page .info .hours .h2_body {
+    font-size: 20px;
+  }
+  .contact-page .info .hours .h3_body {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact-page .contact_method {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-page .contact_method .methods {
+    padding: 18px 0;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .contact-page .contact_method .methods i {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+  .contact-page .contact_method .methods .h2_body {
+    margin-bottom: 4px;
+  }
+  .contact-page .info {
+    padding: 30px 6.15%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 56px;
+  }
+  .contact-page .info iframe {
+    width: 100%;
+    height: 224px;
+    margin-bottom: 16px;
+  }
+  .contact-page .info .hours {
+    width: 100%;
+  }
+  .contact-page .info .hours .addr {
+    margin-bottom: 16px;
+  }
+  .contact-page .info .hours .h2_body {
+    margin-bottom: 4px;
+    font-size: 18px;
+  }
+  .contact-page .info .hours .hour {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 0;
+  }
+  .contact-page .info .hours .hour div {
+    margin-right: 24px;
+  }
 }
 
 /************** Price page *********************/
