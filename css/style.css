@@ -121,6 +121,7 @@ font-family: 'Roboto', sans-serif;
 
 .main_menu .menus a.bookBtn {
   color: white;
+  margin: 0;
 }
 
 .main_menu #toggleBtn {
@@ -462,6 +463,10 @@ footer .contacts .infos .sns i {
   margin-right: 22px;
 }
 
+footer .contacts .infos iframe {
+  margin: 0 10px;
+}
+
 footer .contacts .infos .hours {
   margin-top: 16px;
 }
@@ -470,7 +475,7 @@ footer .contacts .infos .hours span {
   margin-right: 16px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1300px) {
   footer {
     padding: 23px 6.15%;
     display: -webkit-box;
@@ -521,7 +526,7 @@ footer .contacts .infos .hours span {
   }
   footer .contacts .infos iframe {
     width: 90%;
-    margin-bottom: 8px;
+    margin: 0px 0px 8px 0px;
   }
 }
 
@@ -535,6 +540,17 @@ footer .contacts .infos .hours span {
   font-size: 55px;
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+  .page_main_header {
+    padding: 35px 6.15%;
+  }
+  .page_main_header .page_header_title {
+    font-size: 32px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600;
+  }
 }
 
 /************* covid page ************/
@@ -560,6 +576,24 @@ footer .contacts .infos .hours span {
 
 .covid-page .covid_policies .h3_body li {
   margin-bottom: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .covid-page .updated {
+    margin-bottom: 56px;
+  }
+  .covid-page .updated .date {
+    margin-bottom: 0;
+  }
+  .covid-page .covid_policies {
+    margin-bottom: 56px;
+  }
+  .covid-page .covid_policies .h2_title {
+    margin-bottom: 8px;
+  }
+  .covid-page .covid_policies .h3_body li {
+    margin-bottom: 0;
+  }
 }
 
 /************* policy page ************/
@@ -617,6 +651,54 @@ footer .contacts .infos .hours span {
 
 .policy-page .piercing_policy .tattoo_imgs img {
   width: 23%;
+}
+
+@media screen and (max-width: 768px) {
+  .policy-page .tattoo_policy {
+    margin-bottom: 56px;
+  }
+  .policy-page .tattoo_policy .h2_title {
+    margin-bottom: 8px;
+  }
+  .policy-page .tattoo_policy .h3_title {
+    margin-top: 32px;
+  }
+  .policy-page .tattoo_policy .h3_body {
+    margin: 8px 0;
+  }
+  .policy-page .tattoo_policy .tattoo_imgs {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .policy-page .tattoo_policy .tattoo_imgs img {
+    width: 23%;
+  }
+  .policy-page .piercing_policy .h2_title {
+    margin-bottom: 8px;
+  }
+  .policy-page .piercing_policy .h3_title {
+    margin-top: 32px;
+  }
+  .policy-page .piercing_policy .h3_body {
+    margin: 8px 0;
+  }
+  .policy-page .piercing_policy .tattoo_imgs {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .policy-page .piercing_policy .tattoo_imgs img {
+    width: 23%;
+  }
 }
 
 /************ waiver,aftercare page ***************/

@@ -107,6 +107,7 @@ font-family: 'Roboto', sans-serif;
         }
         a.bookBtn{
             color: white;
+            margin: 0;
         }
     }
     #toggleBtn{
@@ -165,8 +166,10 @@ font-family: 'Roboto', sans-serif;
 @media screen and (max-width: 1300px){
     .main_menu{
         justify-content: space-between;
-        .menus a{
+        .menus {
+            a{
             font-size: 18px;
+            }
         }
     }
 }
@@ -379,6 +382,9 @@ footer{
                     margin-right: 22px;
                 }
             }
+            iframe{
+                margin: 0 10px;
+            }
             .hours{
                 margin-top: 16px;
                 span{
@@ -388,9 +394,8 @@ footer{
         }  
     }
 }
-
-// mobile size
-@media screen and (max-width: 768px){
+//medium size
+@media screen and (max-width: 1300px){
     footer{
         padding: 23px 6.15%;
         display: flex;
@@ -430,7 +435,7 @@ footer{
                 }
                 iframe{
                     width: 90%;
-                    margin-bottom: 8px;
+                    margin: 0px 0px 8px 0px;
                 }
             }  
         }
@@ -445,6 +450,17 @@ footer{
         font-size: 55px;
         font-family: 'Barlow Condensed', sans-serif;
         font-weight: 700;
+    }
+}
+// mobile size
+@media screen and (max-width: 768px){
+    .page_main_header{
+        padding: 35px 6.15%;
+        .page_header_title{
+            font-size: 32px;
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 600;
+        }
     }
 }
 
@@ -467,6 +483,29 @@ footer{
             padding-left: 24px;
             li{
                 margin-bottom: 8px;
+            }
+        }
+    }
+}
+// mobile size
+@media screen and (max-width: 768px){
+    .covid-page{
+        .updated{
+            margin-bottom: 56px;
+            .date{
+                margin-bottom: 0;
+            }
+        }
+    
+        .covid_policies{
+            margin-bottom: 56px;
+            .h2_title{
+                margin-bottom: 8px;
+            }
+            .h3_body{
+                li{
+                    margin-bottom: 0;
+                }
             }
         }
     }
@@ -515,7 +554,51 @@ footer{
         }
     }
 }
-
+// mobile size
+@media screen and (max-width: 768px){
+    .policy-page{
+        .tattoo_policy{
+            margin-bottom: 56px;
+            .h2_title{
+                margin-bottom: 8px;
+            }
+            .h3_title{
+                margin-top: 32px;
+            }
+            .h3_body{
+                margin: 8px 0;
+            }
+            .tattoo_imgs{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                img{
+                    width: 23%;
+                }
+            }
+        }
+        
+        .piercing_policy{
+            .h2_title{
+                margin-bottom: 8px;
+            }
+            .h3_title{
+                margin-top: 32px;
+            }
+            .h3_body{
+                margin: 8px 0;
+            }
+            .tattoo_imgs{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                img{
+                    width: 23%;
+                }
+            }
+        }
+    }
+}
 
 /************ waiver,aftercare page ***************/
 .after-page{

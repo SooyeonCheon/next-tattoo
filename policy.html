@@ -11,6 +11,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Oxygen:wght@400;700&family=Raleway&family=Roboto&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>NEXT! | Tattoo,Piercing</title>
 </head>
 
@@ -32,7 +35,26 @@
                 <a href="contact.html">Contact us</a>
                 <a href="booking.html" class="bookBtn">Book an appointment</a>
             </div>
+            <span id="toggleBtn" onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
         </nav>
+
+        <!--------------- toggle menu ------------------->
+        <!-- The overlay -->
+        <div id="myNav" class="overlay">
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <!-- Overlay content -->
+            <div class="overlay-content">
+                <a href="covid.html">COVID-19</a>
+                <a href="policy.html">Policy</a>
+                <a href="artists.html">Artists</a>
+                <a href="price.html">Price</a>
+                <a href="waiver.html">Waiver</a>
+                <a href="aftercare.html">Aftercare</a>
+                <a href="contact.html">Contact us</a>
+                <a href="booking.html" class="bookBtn">Book an appointment</a>
+            </div>
+        </div>
 
         <!-------------- header img & title -------------->
         <div class="page_main_header">
