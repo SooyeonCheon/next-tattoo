@@ -993,16 +993,17 @@ footer .contacts .infos .hours span {
 
 /******************** Artist page ************************/
 .artist-page .h2_title {
-  margin-bottom: 32px;
+  margin-bottom: 16px;
 }
 
 .artist-page .artists {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  -webkit-column-gap: 24px;
-          column-gap: 24px;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  -webkit-column-gap: 0;
+          column-gap: 0;
+  row-gap: 16px;
 }
 
 .artist-page .artists .artist_img {
@@ -1024,6 +1025,6 @@ footer .contacts .infos .hours span {
 }
 
 .artist-page .second_title {
-  margin-top: 96px;
+  margin-top: 56px;
 }
 /*# sourceMappingURL=style.css.map */
