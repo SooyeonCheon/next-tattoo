@@ -678,7 +678,8 @@ footer .contacts .infos .hours span {
             justify-content: space-between;
   }
   .policy-page .tattoo_policy .tattoo_imgs img {
-    width: 40%;
+    width: 70%;
+    margin-right: 25px;
   }
   .policy-page .piercing_policy .h2_title {
     margin-bottom: 8px;
@@ -688,6 +689,21 @@ footer .contacts .infos .hours span {
   }
   .policy-page .piercing_policy .h3_body {
     margin: 8px 0;
+  }
+  .policy-page .piercing_policy .tattoo_imgs {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .policy-page .piercing_policy .tattoo_imgs img {
+    width: 70%;
+    margin-right: 25px;
   }
 }
 
@@ -993,17 +1009,16 @@ footer .contacts .infos .hours span {
 
 /******************** Artist page ************************/
 .artist-page .h2_title {
-  margin-bottom: 16px;
+  margin-bottom: 32px;
 }
 
 .artist-page .artists {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[1];
-      grid-template-columns: repeat(1, 1fr);
-  -webkit-column-gap: 0;
-          column-gap: 0;
-  row-gap: 16px;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 24px;
+          column-gap: 24px;
 }
 
 .artist-page .artists .artist_img {
@@ -1025,6 +1040,30 @@ footer .contacts .infos .hours span {
 }
 
 .artist-page .second_title {
-  margin-top: 56px;
+  margin-top: 96px;
+}
+
+@media screen and (max-width: 768px) {
+  .artist-page .h2_title {
+    margin-bottom: 16px;
+  }
+  .artist-page .artists {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -webkit-column-gap: 0;
+            column-gap: 0;
+    row-gap: 16px;
+  }
+  .artist-page .artists .artist_img span {
+    bottom: 29px;
+    left: 32px;
+    font-weight: 500;
+    font-size: 35px;
+  }
+  .artist-page .second_title {
+    margin-top: 56px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
