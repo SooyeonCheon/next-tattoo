@@ -554,27 +554,9 @@ footer{
         }
     }
 }
-// slide show
-.w3-content{
-    display: none;
-}
-.mySlides {
-    display:none;
-}
-.w3-left, .w3-right, .w3-badge {
-    cursor:pointer;
-}
-.w3-badge {
-    height:13px;
-    width:13px;
-    padding:0;
 
-}
 // mobile size
 @media screen and (max-width: 768px){
-    .w3-content{
-        display: block;
-    }
     .policy-page{
         .tattoo_policy{
             margin-bottom: 56px;
@@ -588,7 +570,14 @@ footer{
                 margin: 8px 0;
             }
             .tattoo_imgs{
-                display: none;
+                overflow-x: scroll;
+                overflow-y: hidden;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                img{
+                    width: 40%;
+                }
             }
         }
         
@@ -601,9 +590,6 @@ footer{
             }
             .h3_body{
                 margin: 8px 0;
-            }
-            .tattoo_imgs{
-                display: none;
             }
         }
     }
