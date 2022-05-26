@@ -609,10 +609,12 @@ footer{
 
 /************ waiver,aftercare page ***************/
 .after-page{
+    .h3_body{
+        margin-bottom: 32px;
+    }
     .waivers{
         display: flex;
         justify-content: space-between;
-        margin-top: 32px;
         .waiver{
             width: 49%;
             text-align: center;
@@ -637,6 +639,34 @@ footer{
                 flex-direction: column;
                 .body_after{
                     margin-bottom: 16px;
+                }
+            }
+        }
+    }
+}
+// mobile size
+@media screen and (max-width: 768px){
+    .after-page{
+        .waivers{
+            flex-direction: column;
+            .waiver{
+                width: 100%;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 56px;
+                img{
+                    width: 100%;
+                }
+                .h2_title{
+                    margin: 16px 0;
+                }
+                .piercing_after{
+                    display: flex;
+                    flex-direction: column;
+                    .body_after{
+                        margin-bottom: 16px;
+                    }
                 }
             }
         }
@@ -810,8 +840,73 @@ footer{
     .colortd{
         background-color: #E5E5E5;
     }
+    .small_tb{
+        display: none;
+    }
 }
+//font-size
+@media screen and (max-width: 1300px){
+    .price-page{
+        .piercing_img{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            .zone{
+                .h2_body{
+                    font-family: 'Oxygen', sans-serif;
+                    font-weight: 400;
+                    font-size: 16px;
+                }
+                .zone_price{
+                    .blank{
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+// mobile size
+@media screen and (max-width: 768px){
+    .price-page{
+        .h2_title{
+            margin-bottom: 8px;
+        }
+        .second_title{
+            margin-top: 56px;
+        }
+        .h3_title{
+            margin: 32px 0 4px;
+        }
+        .piercing_img{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            .zone{
+                .zone_price{
+                    .blank{
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+        .big_tb{
+            display: none;
+        }
+        .small_tb{
+            display: block;
+            font-family: 'Oxygen', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            table{
+                width: 100%;
+                margin-bottom: 16px;
 
+            }
+        }
+    }
+}
 
 
 /******************** Artist page ************************/

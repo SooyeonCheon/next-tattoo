@@ -708,6 +708,10 @@ footer .contacts .infos .hours span {
 }
 
 /************ waiver,aftercare page ***************/
+.after-page .h3_body {
+  margin-bottom: 32px;
+}
+
 .after-page .waivers {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -715,7 +719,6 @@ footer .contacts .infos .hours span {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 32px;
 }
 
 .after-page .waivers .waiver {
@@ -758,6 +761,45 @@ footer .contacts .infos .hours span {
 
 .after-page .waivers .waiver .piercing_after .body_after {
   margin-bottom: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .after-page .waivers {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .after-page .waivers .waiver {
+    width: 100%;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 56px;
+  }
+  .after-page .waivers .waiver img {
+    width: 100%;
+  }
+  .after-page .waivers .waiver .h2_title {
+    margin: 16px 0;
+  }
+  .after-page .waivers .waiver .piercing_after {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .after-page .waivers .waiver .piercing_after .body_after {
+    margin-bottom: 16px;
+  }
 }
 
 /******************* booking page *************************/
@@ -1005,6 +1047,63 @@ footer .contacts .infos .hours span {
 
 .price-page .colortd {
   background-color: #E5E5E5;
+}
+
+.price-page .small_tb {
+  display: none;
+}
+
+@media screen and (max-width: 1300px) {
+  .price-page .piercing_img {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  .price-page .piercing_img .zone .h2_body {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .price-page .piercing_img .zone .zone_price .blank {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .price-page .h2_title {
+    margin-bottom: 8px;
+  }
+  .price-page .second_title {
+    margin-top: 56px;
+  }
+  .price-page .h3_title {
+    margin: 32px 0 4px;
+  }
+  .price-page .piercing_img {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  .price-page .piercing_img .zone .zone_price .blank {
+    font-size: 10px;
+  }
+  .price-page .big_tb {
+    display: none;
+  }
+  .price-page .small_tb {
+    display: block;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .price-page .small_tb table {
+    width: 100%;
+    margin-bottom: 16px;
+  }
 }
 
 /******************** Artist page ************************/
