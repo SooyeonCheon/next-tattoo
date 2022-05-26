@@ -42,6 +42,29 @@ font-family: 'Roboto', sans-serif;
   padding: 12px 16px;
 }
 
+@media screen and (max-width: 768px) {
+  .h2_title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+  }
+  .h2_body {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .h3_title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .h3_body {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+
 /*************** Header ******************/
 .covid {
   background-color: black;
@@ -64,9 +87,10 @@ font-family: 'Roboto', sans-serif;
   color: white;
 }
 
-.nav-sticky {
-  position: fixed;
-  z-index: 0;
+@media screen and (max-width: 768px) {
+  .covid {
+    height: 39px;
+  }
 }
 
 .main_menu {
@@ -80,6 +104,7 @@ font-family: 'Roboto', sans-serif;
   background-color: white;
   border-bottom: 1px solid lightgray;
   width: 100%;
+  overflow-x: hidden;
 }
 
 .main_menu .logo span {
@@ -98,14 +123,45 @@ font-family: 'Roboto', sans-serif;
   color: white;
 }
 
+.main_menu #toggleBtn {
+  display: none;
+}
+
+.main_menu #toggleBtn i {
+  font-size: 30px;
+}
+
+.main_menu #toggleBtn i:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .main_menu {
+    padding: 17px;
+  }
+}
+
 .nav-scroll {
   position: fixed;
   -webkit-transform: translateY(-70.5px);
           transform: translateY(-70.5px);
 }
 
+@media screen and (max-width: 768px) {
+  .nav-scroll {
+    position: fixed;
+    -webkit-transform: translateY(-39.5px);
+            transform: translateY(-39.5px);
+  }
+}
+
+.nav-sticky {
+  position: fixed;
+  z-index: 0;
+}
+
 .main_header {
-  background-color: darkgray;
+  background-color: #C4C4C4;
   padding: 275px 10.5%;
 }
 
@@ -122,6 +178,124 @@ font-family: 'Roboto', sans-serif;
 
 .main_header a {
   text-decoration: none;
+}
+
+@media screen and (max-width: 1300px) {
+  .main_menu {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .main_menu .menus a {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .menus {
+    display: none;
+  }
+  .main_menu #toggleBtn {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main_header {
+    padding: 125px 10.5%;
+  }
+  .main_header .header_title {
+    font-size: 32px;
+    font-weight: 600;
+  }
+  .main_header .header_body {
+    display: none;
+  }
+  .main_header .bookBtn {
+    font-size: 18px;
+  }
+}
+
+/********************* Toggle menu ************************/
+.overlay {
+  height: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: #C4C4C4;
+  overflow-x: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  place-items: center;
+}
+
+.overlay-content .bookBtn {
+  color: white;
+  padding: 8px 16px;
+  margin-top: 8px;
+}
+
+.overlay-content .bookBtn:hover {
+  background-color: #484848;
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 16px;
+  text-decoration: none;
+  color: black;
+  display: inline;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 44px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
 }
 
 /*************** Main ******************/
@@ -175,9 +349,61 @@ main .policies .policy_right .read_policy {
   margin-top: 32px;
 }
 
+@media screen and (max-width: 768px) {
+  main {
+    padding: 56px 6.15%;
+  }
+  main .main_title {
+    margin-bottom: 8px;
+  }
+  main .policies {
+    margin-top: 32px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .policies img {
+    width: 100%;
+  }
+  main .policies .policy_right {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0 3%;
+  }
+  main .policies .policy_right .h3_title {
+    margin: 8px 0;
+  }
+  main .policies .policy_right .read_policy {
+    padding: 8px 16px;
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-top: 24px;
+    margin-bottom: 10px;
+  }
+}
+
 /*************** Footer ******************/
 footer {
-  background-color: darkgray;
+  background-color: #C4C4C4;
   padding: 88px 10.5%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -244,9 +470,64 @@ footer .contacts .infos .hours span {
   margin-right: 16px;
 }
 
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 23px 6.15%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .footer_title {
+    font-weight: 700;
+    font-size: 18px;
+  }
+  footer .line {
+    margin: 8px 0;
+  }
+  footer .links {
+    width: 100%;
+  }
+  footer .links .link_menu a {
+    margin-bottom: 8px;
+  }
+  footer .contacts {
+    width: 100%;
+    margin-top: 24px;
+  }
+  footer .contacts .infos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .contacts .infos .phone_num {
+    margin-bottom: 8px;
+  }
+  footer .contacts .infos .sns {
+    margin: 18px 0 28px 10px;
+  }
+  footer .contacts .infos .hours {
+    margin-top: 8px;
+  }
+  footer .contacts .infos .hours span {
+    margin-right: 26px;
+  }
+  footer .contacts .infos iframe {
+    width: 90%;
+    margin-bottom: 8px;
+  }
+}
+
 /************** Pages header *****************/
 .page_main_header {
-  background-color: darkgray;
+  background-color: #C4C4C4;
   padding: 105px 10.5%;
 }
 
@@ -518,7 +799,7 @@ footer .contacts .infos .hours span {
 }
 
 .contact-page .info {
-  background-color: darkgray;
+  background-color: #C4C4C4;
   padding: 34px 10.5%;
   display: -webkit-box;
   display: -ms-flexbox;

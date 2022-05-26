@@ -39,7 +39,26 @@
                 <a href="contact.html">Contact us</a>
                 <a href="booking.html" class="bookBtn">Book an appointment</a>
             </div>
+            <span id="toggleBtn" onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
         </nav>
+
+        <!--------------- toggle menu ------------------->
+        <!-- The overlay -->
+        <div id="myNav" class="overlay">
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <!-- Overlay content -->
+            <div class="overlay-content">
+                <a href="covid.html">COVID-19</a>
+                <a href="policy.html">Policy</a>
+                <a href="artists.html">Artists</a>
+                <a href="price.html">Price</a>
+                <a href="waiver.html">Waiver</a>
+                <a href="aftercare.html">Aftercare</a>
+                <a href="contact.html">Contact us</a>
+                <a href="booking.html" class="bookBtn">Book an appointment</a>
+            </div>
+        </div>
 
         <!-------------- header img & title -------------->
         <div class="main_header">
@@ -112,7 +131,7 @@
             <div class="infos h3_body">
                 <!---------- phone,mail,sns ---------->
                 <div class="contact_info">
-                    <div>(604) 684-6398</div>
+                    <div class="phone_num">(604) 684-6398</div>
                     <div>info@nextbody.com</div>
                     <div class="sns">
                         <i class="fa-brands fa-facebook"></i>
@@ -120,7 +139,10 @@
                     </div>
                 </div>
                 <!---------- google map ---------->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2603.4445437894547!2d-123.0715239!3d49.2679732!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548673d5b18e5695%3A0xcb2ffe5bf174c60d!2sNext*21!5e0!3m2!1sen!2sca!4v1653439089800!5m2!1sen!2sca" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2603.4445437894547!2d-123.0715239!3d49.2679732!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548673d5b18e5695%3A0xcb2ffe5bf174c60d!2sNext*21!5e0!3m2!1sen!2sca!4v1653439089800!5m2!1sen!2sca"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <!---------- location, hours ---------->
                 <div>
                     <div class="location">
@@ -143,7 +165,7 @@
         </div>
     </footer>
 
-<script src="index.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>

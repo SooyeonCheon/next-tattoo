@@ -9,12 +9,24 @@ window.addEventListener("scroll", function () {
   }
 });
 
+
 window.addEventListener("scroll", function () {
-    let navbar = document.querySelector(".sticky");
+    let nav = document.querySelector(".sticky");
     if (window.pageYOffset > 0) {
-      navbar.classList.add("nav-sticky");
-      navbar.style.transition = "0.5s";
+      nav.classList.add("nav-sticky");
+      nav.style.transition = "0.5s";
     } else {
-      navbar.classList.remove("nav-sticky");
+      nav.classList.remove("nav-sticky");
     }
   });
+
+
+/* Open */
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+  }
+  
+  /* Close */
+  function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+  }
