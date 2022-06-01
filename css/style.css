@@ -131,6 +131,7 @@ body {
 
 .main_menu #toggleBtn {
   display: none;
+  color: #ffffff;
 }
 
 .main_menu #toggleBtn i {
