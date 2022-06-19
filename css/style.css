@@ -43,8 +43,23 @@ body {
 .bookBtn {
   background-color: #F8C246;
   border-radius: 10px;
-  color: #0E0E0E;
   padding: 12px 16px;
+  font-weight: 700;
+  border: 1px solid #0E0E0E;
+  color: #0E0E0E;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+.bookBtn:hover {
+  color: #F8C246;
+  background-color: #0E0E0E;
+  border: 1px solid #F8C246;
+}
+
+.focus_page {
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -72,9 +87,9 @@ body {
 
 /*************** Header ******************/
 .covid {
-  background-color: black;
+  background-color: #EDE9D4;
   text-align: center;
-  color: white;
+  color: black;
   height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -89,7 +104,7 @@ body {
 }
 
 .covid a {
-  color: white;
+  color: black;
 }
 
 @media screen and (max-width: 768px) {
@@ -122,11 +137,25 @@ body {
   text-decoration: none;
   color: #ffffff;
   margin-right: 44px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.main_menu .menus a:hover {
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
+  font-size: 24px;
 }
 
 .main_menu .menus a.bookBtn {
   margin: 0;
   color: #0E0E0E;
+}
+
+.main_menu .menus a.bookBtn:hover {
+  color: #F8C246;
+  border-bottom: 1px solid #F8C246;
+  font-size: 22.5px;
 }
 
 .main_menu #toggleBtn {
@@ -176,13 +205,15 @@ body {
 
 .main_header .header_title {
   margin-bottom: 32px;
-  font-size: 55px;
+  font-size: 80px;
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 700;
 }
 
 .main_header .header_body {
   margin-bottom: 159px;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 50px;
 }
 
 .main_header a {
@@ -355,10 +386,20 @@ main .policies .policy_right .read_policy {
   border-radius: 10px;
   text-decoration: none;
   color: #0E0E0E;
-  background-color: #F8C246;
+  background-color: #EDE9D4;
   -ms-flex-item-align: start;
       align-self: flex-start;
   margin-top: 32px;
+  font-weight: 700;
+  border: 1px solid #0E0E0E;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+main .policies .policy_right .read_policy:hover {
+  color: #EDE9D4;
+  background-color: #0E0E0E;
+  border: 1px solid #EDE9D4;
 }
 
 @media screen and (max-width: 768px) {
@@ -451,6 +492,13 @@ footer .links .link_menu {
 footer .links .link_menu a {
   text-decoration: none;
   color: #ffffff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+footer .links .link_menu a:hover {
+  color: #F8C246;
+  text-decoration: underline;
 }
 
 footer .contacts {
@@ -466,6 +514,18 @@ footer .contacts .infos {
           justify-content: space-between;
 }
 
+footer .contacts .infos a {
+  text-decoration: none;
+  color: #ffffff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+footer .contacts .infos a:hover {
+  color: #F8C246;
+  text-decoration: underline;
+}
+
 footer .contacts .infos .sns {
   margin-top: 18px;
 }
@@ -473,6 +533,13 @@ footer .contacts .infos .sns {
 footer .contacts .infos .sns i {
   font-size: 24px;
   margin-right: 22px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+footer .contacts .infos .sns i:hover {
+  color: #F8C246;
+  cursor: pointer;
 }
 
 footer .contacts .infos iframe {
@@ -544,7 +611,10 @@ footer .contacts .infos .hours span {
 
 /************** Pages header *****************/
 .page_main_header {
-  background-color: #C4C4C4;
+  background-color: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0e0e0e), color-stop(35%, rgba(199, 199, 199, 0.3)), color-stop(50%, rgba(216, 216, 216, 0.3)), color-stop(65%, rgba(199, 199, 199, 0.3)), to(#0e0e0e));
+  background: linear-gradient(180deg, #0e0e0e 0%, rgba(199, 199, 199, 0.3) 35%, rgba(216, 216, 216, 0.3) 50%, rgba(199, 199, 199, 0.3) 65%, #0e0e0e 100%);
+  border: 1px solid #000000;
   padding: 105px 10.5%;
 }
 
@@ -552,6 +622,7 @@ footer .contacts .infos .hours span {
   font-size: 55px;
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 700;
+  color: #FFFFFF;
 }
 
 @media screen and (max-width: 768px) {
@@ -754,7 +825,13 @@ footer .contacts .infos .hours span {
 }
 
 .after-page .waivers .waiver .h2_body a {
-  color: black;
+  color: #ffffff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.after-page .waivers .waiver .h2_body a:hover {
+  color: #F8C246;
 }
 
 .after-page .waivers .waiver .h2_body a i {
@@ -955,7 +1032,7 @@ footer .contacts .infos .hours span {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 1px solid black;
+  border: 3px solid #ffffff;
   padding: 46px 0;
   width: 32%;
   place-items: center;
@@ -975,7 +1052,6 @@ footer .contacts .infos .hours span {
 }
 
 .contact-page .info {
-  background-color: #C4C4C4;
   padding: 34px 10.5%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -984,6 +1060,7 @@ footer .contacts .infos .hours span {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 96px;
+  color: #ffffff;
 }
 
 .contact-page .info iframe {
@@ -1129,7 +1206,7 @@ footer .contacts .infos .hours span {
 }
 
 .price-page .piercing_img .zone {
-  border: 1px solid black;
+  border: 1px solid #ffffff;
   margin-top: 0px;
 }
 
@@ -1156,17 +1233,13 @@ footer .contacts .infos .hours span {
 }
 
 .price-page table, .price-page tr, .price-page td {
-  border: 1px solid black;
+  border: 1px solid #ffffff;
   border-collapse: collapse;
   text-align: center;
 }
 
 .price-page td {
   padding: 8px 24px;
-}
-
-.price-page .colortd {
-  background-color: #E5E5E5;
 }
 
 .price-page .small_tb {
