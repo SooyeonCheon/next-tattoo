@@ -637,6 +637,20 @@ footer .contacts .infos .hours span {
 }
 
 /************* covid page ************/
+.covid-page .link_span {
+  text-decoration: underline;
+}
+
+.covid-page .link_span a {
+  color: #ffffff;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.covid-page .link_span a:hover {
+  color: #F8C246;
+}
+
 .covid-page .updated {
   margin-bottom: 96px;
 }
@@ -910,10 +924,25 @@ footer .contacts .infos .hours span {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 1px solid black;
+  border: 1px solid #ffffff;
   padding: 46px 0;
   width: 32%;
   place-items: center;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.booking-page .contact_method .methods:hover {
+  background-color: #ffffff;
+  color: #0E0E0E;
+  cursor: pointer;
+}
+
+.booking-page .contact_method .methods:hover .blue-color {
+  color: blue;
+  text-decoration: underline;
 }
 
 .booking-page .contact_method .methods i {
@@ -943,7 +972,7 @@ footer .contacts .infos .hours span {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 1px solid black;
+  border: 1px solid #ffffff;
   width: 32%;
 }
 
@@ -966,6 +995,15 @@ footer .contacts .infos .hours span {
   padding: 55px 0;
 }
 
+.booking-page .contact_artist .artists .artist_contact:hover {
+  background-color: #ffffff;
+  color: #0E0E0E;
+}
+
+.booking-page .contact_artist .artists .artist_contact:hover a {
+  color: #0E0E0E;
+}
+
 .booking-page .contact_artist .artists .artist_contact .name {
   margin-bottom: 16px;
 }
@@ -977,6 +1015,16 @@ footer .contacts .infos .hours span {
 .booking-page .contact_artist .artists .artist_contact i {
   margin-right: 10px;
   font-size: 18px;
+}
+
+.booking-page .contact_artist .artists .artist_contact a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.booking-page .contact_artist .artists .artist_contact a:hover {
+  color: blue;
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 768px) {
@@ -1036,6 +1084,19 @@ footer .contacts .infos .hours span {
   padding: 46px 0;
   width: 32%;
   place-items: center;
+  text-decoration: none;
+  color: #ffffff;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.contact-page .contact_method .methods:hover {
+  -webkit-box-shadow: 2px 2px 10px #838282;
+          box-shadow: 2px 2px 10px #838282;
+}
+
+.contact-page .contact_method .methods:hover div {
+  text-decoration: underline;
 }
 
 .contact-page .contact_method .methods i {
