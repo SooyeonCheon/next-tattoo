@@ -231,6 +231,19 @@ body {
   }
   .main_menu .menus a {
     font-size: 18px;
+    margin-right: 35px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .main_menu .menus a:hover {
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+    font-size: 19px;
+  }
+  .main_menu .menus a.bookBtn:hover {
+    color: #F8C246;
+    border-bottom: 1px solid #F8C246;
+    font-size: 18px;
   }
   .main_header {
     padding: 200px 10.5%;
@@ -901,6 +914,7 @@ footer .contacts .infos .hours span {
   }
   .after-page .waivers .waiver img {
     width: 100%;
+    height: 370px;
   }
   .after-page .waivers .waiver .h2_title {
     margin: 16px 0;
@@ -1041,6 +1055,16 @@ footer .contacts .infos .hours span {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 1300px) {
+  .booking-page .contact_artist .artists .h3_body {
+    font-size: 14px;
+  }
+  .booking-page .contact_artist .artists .h3_body i {
+    margin-right: 5px;
+    font-size: 14px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .booking-page .contact_method {
     -webkit-box-orient: vertical;
@@ -1070,6 +1094,13 @@ footer .contacts .infos .hours span {
   .booking-page .contact_artist .artists {
     width: 100%;
     margin-bottom: 16px;
+  }
+  .booking-page .contact_artist .artists .h3_body {
+    font-size: 18px;
+  }
+  .booking-page .contact_artist .artists .h3_body i {
+    margin-right: 10px;
+    font-size: 18px;
   }
   .booking-page .contact_artist .artists img {
     display: none;
@@ -1464,7 +1495,7 @@ footer .contacts .infos .hours span {
     bottom: 29px;
     left: 32px;
     font-weight: 500;
-    font-size: 35px;
+    font-size: 24px;
   }
   .artist-page .second_title {
     margin-top: 56px;
