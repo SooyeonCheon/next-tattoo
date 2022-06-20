@@ -114,6 +114,8 @@ body {
 }
 
 .main_menu {
+  position: relative;
+  z-index: 9999;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -193,7 +195,7 @@ body {
 
 .nav-sticky {
   position: fixed;
-  z-index: 0;
+  z-index: 999;
 }
 
 .main_header {
@@ -1091,12 +1093,13 @@ footer .contacts .infos .hours span {
 }
 
 .contact-page .contact_method .methods:hover {
-  -webkit-box-shadow: 2px 2px 10px #838282;
-          box-shadow: 2px 2px 10px #838282;
+  background-color: #ffffff;
+  color: #0E0E0E;
 }
 
-.contact-page .contact_method .methods:hover div {
+.contact-page .contact_method .methods:hover .color_link {
   text-decoration: underline;
+  color: blue;
 }
 
 .contact-page .contact_method .methods i {
@@ -1372,24 +1375,60 @@ footer .contacts .infos .hours span {
       grid-template-columns: repeat(2, 1fr);
   -webkit-column-gap: 24px;
           column-gap: 24px;
+  background-color: rgba(255, 255, 255, 0.008);
 }
 
 .artist-page .artists .artist_img {
   position: relative;
-  z-index: -1;
+  z-index: 3;
+  overflow: hidden;
+}
+
+.artist-page .artists .artist_img:hover {
+  cursor: pointer;
+}
+
+.artist-page .artists .artist_img:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .artist-page .artists .artist_img img {
+  position: relative;
+  z-index: 4;
   width: 100%;
+  height: 100%;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.artist-page .artists .artist_img .artist_name {
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  height: 60px;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 4, 4, 0)), to(#393e41));
+  background: linear-gradient(180deg, rgba(4, 4, 4, 0) 0%, #393e41 100%);
+  color: #ffffff;
 }
 
 .artist-page .artists .artist_img span {
-  position: absolute;
-  bottom: 29px;
-  left: 32px;
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 500;
   font-size: 35px;
+  padding-left: 24px;
 }
 
 .artist-page .second_title {
@@ -1418,5 +1457,86 @@ footer .contacts .infos .hours span {
   .artist-page .second_title {
     margin-top: 56px;
   }
+}
+
+/******************** Artist detail page ************************/
+.artistdetail-page .page_header_title {
+  margin-bottom: 16px;
+}
+
+.artistdetail-page .h2_body {
+  color: #ffffff;
+}
+
+.artistdetail-page .contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 56px;
+}
+
+.artistdetail-page .contents img {
+  width: 49%;
+}
+
+.artistdetail-page .contents .details {
+  width: 49%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.artistdetail-page .contents .details .sns_booking {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.artistdetail-page .contents .details i.fa-brands {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 36px;
+  margin-right: 45px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.artistdetail-page .contents .details i.fa-brands:hover {
+  color: #F8C246;
+}
+
+.artistdetail-page .contents .details a.bookBtn {
+  text-decoration: none;
+  color: #0E0E0E;
+}
+
+.artistdetail-page .contents .details a.bookBtn:hover {
+  color: #F8C246;
+}
+
+.artistdetail-page .works {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.artistdetail-page .works img {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

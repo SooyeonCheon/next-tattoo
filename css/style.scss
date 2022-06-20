@@ -104,6 +104,8 @@ body{
     }
 }
 .main_menu{
+    position: relative;
+    z-index: 9999;
     display: flex;
     justify-content: space-around;
     place-items: center;
@@ -170,7 +172,7 @@ body{
 // scroll class (not index)
 .nav-sticky{
     position: fixed;
-    z-index: 0;
+    z-index: 999;
 }
 
 .main_header{
@@ -885,9 +887,11 @@ footer{
             color: #ffffff;
             transition: 0.3s ease;
             &:hover{
-                box-shadow: 2px 2px 10px rgb(131, 130, 130);
-                div{
+                background-color: #ffffff;
+                color: $main-color;
+                .color_link{
                     text-decoration: underline;
+                    color: blue;
                 }
                 
             }
@@ -1129,19 +1133,44 @@ footer{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 24px;
+        background-color: rgba(255, 255, 255, 0.008);
         .artist_img{
             position: relative;
-            z-index: -1;
+            z-index: 3;
+            overflow: hidden;
+            &:hover{
+                cursor: pointer;
+                
+                img{
+                    transform: scale(1.1);
+                    
+                }
+            }
             img{
+                position: relative;
+                z-index: 4;
                 width: 100%;
+                height: 100%;
+                transition: 0.3s ease;
+            }
+            .artist_name{
+                position: absolute;
+                z-index: 5;
+                width: 100%;
+                height: 60px;
+                bottom: 0;
+                left: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                background: linear-gradient(180deg, rgba(4,4,4,0) 0%,  rgba(57,62,65,1) 100%);
+                color: #ffffff;
             }
             span{
-                position: absolute;
-                bottom:29px;
-                left: 32px;
                 font-family: 'Barlow Condensed', sans-serif;
                 font-weight: 500;
                 font-size: 35px;
+                padding-left: 24px;
             }
         }
     }
@@ -1161,12 +1190,12 @@ footer{
             column-gap: 0;
             row-gap: 16px;
             .artist_img{
-                span{
-                    bottom:29px;
-                    left: 32px;
-                    font-weight: 500;
-                    font-size: 35px;
-                }
+                    span{
+                        bottom:29px;
+                        left: 32px;
+                        font-weight: 500;
+                        font-size: 35px;
+                    }
             }
         }
         .second_title{
@@ -1175,5 +1204,56 @@ footer{
     }
 }
 
-
-
+/******************** Artist detail page ************************/
+.artistdetail-page{
+    .page_header_title{
+        margin-bottom: 16px;
+    }
+    .h2_body{
+        color: #ffffff;
+    }
+    .contents{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 56px;
+        img{
+            width: 49%;
+        }
+        .details{
+            width: 49%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .sns_booking{
+                display: flex;
+                place-items: center;
+                justify-content: end;
+            }
+            i.fa-brands{
+                color: #ffffff;
+                text-decoration: none;
+                font-size: 36px;
+                margin-right: 45px;
+                transition: 0.3s ease;
+                &:hover{
+                    color: $second-color;
+                }
+            }
+            a.bookBtn{
+                text-decoration: none;
+                color: $main-color;
+                &:hover{
+                    color: $second-color;
+                }
+            }
+        }
+    }
+    .works{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 18px;
+        img{
+            width: 100%;
+        }
+    }
+}
