@@ -22,10 +22,12 @@ window.addEventListener("scroll", function () {
 /* Open */
 function openNav() {
   document.getElementById("myNav").style.height = "100%";
+  document.querySelector(".main_menu").style.display = "none";
 }
 
 /* Close */
 function closeNav() {
   document.getElementById("myNav").style.height = "0%";
+  document.querySelector(".main_menu").style.display = "flex";
 }
 

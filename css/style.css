@@ -152,6 +152,7 @@ body {
 .main_menu .menus a.bookBtn {
   margin: 0;
   color: #0E0E0E;
+  font-weight: 700;
 }
 
 .main_menu .menus a.bookBtn:hover {
@@ -175,7 +176,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .main_menu {
-    padding: 17px;
+    padding: 0 17px;
   }
 }
 
@@ -200,7 +201,7 @@ body {
 
 .main_header {
   background-image: url(../img/Tattoo-background1.png);
-  background-size: cover;
+  background-size: 100% 100%;
   padding: 275px 10.5%;
   color: #ffffff;
 }
@@ -231,6 +232,12 @@ body {
   .main_menu .menus a {
     font-size: 18px;
   }
+  .main_header {
+    padding: 200px 10.5%;
+  }
+  .main_header .header_title {
+    font-size: 60px;
+  }
 }
 
 @media screen and (max-width: 1030px) {
@@ -239,6 +246,7 @@ body {
   }
   .main_menu #toggleBtn {
     display: block;
+    color: #F8C246;
   }
 }
 
@@ -255,6 +263,7 @@ body {
   }
   .main_header .bookBtn {
     font-size: 18px;
+    font-weight: 700;
   }
 }
 
@@ -263,10 +272,10 @@ body {
   height: 0;
   width: 100%;
   position: fixed;
-  z-index: 1;
+  z-index: 999;
   left: 0;
   top: 0;
-  background-color: #C4C4C4;
+  background-color: #0E0E0E;
   overflow-x: hidden;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -293,20 +302,17 @@ body {
 }
 
 .overlay-content .bookBtn {
-  color: white;
+  font-weight: 700;
   padding: 8px 16px;
   margin-top: 8px;
-}
-
-.overlay-content .bookBtn:hover {
-  background-color: #484848;
+  color: #0E0E0E;
 }
 
 /* The navigation links inside the overlay */
 .overlay a {
   padding: 16px;
   text-decoration: none;
-  color: black;
+  color: #ffffff;
   display: inline;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -317,15 +323,20 @@ body {
 
 /* When you mouse over the navigation links, change their color */
 .overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
+  color: #F8C246;
 }
 
 /* Position the close button (top right corner) */
 .overlay .closebtn {
+  color: #F8C246;
   position: absolute;
   top: 25px;
   right: 25px;
   font-size: 44px;
+}
+
+.overlay .closebtn:hover {
+  color: #fef3d9;
 }
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
@@ -334,6 +345,7 @@ body {
     font-size: 20px;
   }
   .overlay .closebtn {
+    color: #F8C246;
     font-size: 40px;
     top: 15px;
     right: 35px;
@@ -1522,6 +1534,7 @@ footer .contacts .infos .hours span {
 .artistdetail-page .contents .details a.bookBtn {
   text-decoration: none;
   color: #0E0E0E;
+  font-weight: 700;
 }
 
 .artistdetail-page .contents .details a.bookBtn:hover {

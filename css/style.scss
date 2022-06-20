@@ -132,6 +132,7 @@ body{
         a.bookBtn{
             margin: 0;
             color: $main-color;
+            font-weight: 700;
             &:hover{
                 color: $second-color;
                 border-bottom: 1px solid $second-color;
@@ -153,7 +154,7 @@ body{
 // mobile size - main menu
 @media screen and (max-width: 768px){
     .main_menu{
-        padding: 17px;
+        padding: 0 17px;
     }
 }
 
@@ -177,7 +178,7 @@ body{
 
 .main_header{
     background-image: url(../img/Tattoo-background1.png);
-    background-size: cover;
+    background-size: 100% 100%;
     padding: 275px 10.5%;
     color: #ffffff;
     .header_title{
@@ -206,6 +207,12 @@ body{
             }
         }
     }
+    .main_header{
+        padding: 200px 10.5%;
+        .header_title{
+            font-size: 60px;
+        }
+    }
 }
 
 // menu toggle btn
@@ -216,6 +223,7 @@ body{
     .main_menu{
         #toggleBtn{
             display: block;
+            color: $second-color;
         }
     }
 }
@@ -233,6 +241,7 @@ body{
         }
         .bookBtn{
             font-size: 18px;
+            font-weight: 700;
         }
     }
 }
@@ -242,10 +251,10 @@ body{
     height: 0;
     width: 100%;
     position: fixed; 
-    z-index: 1; 
+    z-index: 999; 
     left: 0;
     top: 0;
-    background-color: #C4C4C4; 
+    background-color: $main-color; 
     overflow-x: hidden; 
     transition: 0.3s; 
   }
@@ -262,12 +271,10 @@ body{
     justify-content: center;
     place-items: center;
     .bookBtn{
-        color: white;
+        font-weight: 700;
         padding: 8px 16px;
         margin-top: 8px;
-        &:hover{
-            background-color: #484848;
-        }
+        color: $main-color;
     }
   }
   
@@ -275,7 +282,7 @@ body{
   .overlay a {
     padding: 16px;
     text-decoration: none;
-    color: black;
+    color: #ffffff;
     display: inline;
     transition: 0.3s; 
     font-family: 'Oxygen', sans-serif;
@@ -285,21 +292,26 @@ body{
   
   /* When you mouse over the navigation links, change their color */
   .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
+    color: $second-color;
   }
   
   /* Position the close button (top right corner) */
   .overlay .closebtn {
+    color: $second-color;
     position: absolute;
     top: 25px;
     right: 25px;
     font-size: 44px;
+    &:hover{
+        color: lighten($second-color, 30%);
+    }
   }
   
   /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
   @media screen and (max-height: 450px) {
     .overlay a {font-size: 20px}
     .overlay .closebtn {
+        color: $second-color;
       font-size: 40px;
       top: 15px;
       right: 35px;
@@ -1242,6 +1254,7 @@ footer{
             a.bookBtn{
                 text-decoration: none;
                 color: $main-color;
+                font-weight: 700;
                 &:hover{
                     color: $second-color;
                 }
