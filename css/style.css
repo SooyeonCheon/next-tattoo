@@ -1095,6 +1095,9 @@ footer .contacts .infos .hours span {
     width: 100%;
     margin-bottom: 16px;
   }
+  .booking-page .contact_artist .artists .h2_body {
+    font-size: 18px;
+  }
   .booking-page .contact_artist .artists .h3_body {
     font-size: 18px;
   }
@@ -1582,5 +1585,70 @@ footer .contacts .infos .hours span {
 
 .artistdetail-page .works img {
   width: 100%;
+}
+
+@media screen and (max-width: 1300px) {
+  .artistdetail-page .contents .h3_body {
+    font-size: 16px;
+  }
+  .artistdetail-page .contents img {
+    width: 42%;
+  }
+  .artistdetail-page .contents .details {
+    width: 56%;
+  }
+  .artistdetail-page .contents .details .sns_booking {
+    margin-top: 20px;
+  }
+  .artistdetail-page .contents .details a.bookBtn {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .artistdetail-page .contents {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .artistdetail-page .contents .h3_body {
+    font-size: 18px;
+  }
+  .artistdetail-page .contents img {
+    width: 100%;
+  }
+  .artistdetail-page .contents .details {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .artistdetail-page .works {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .artistdetail-page .contents .h3_body {
+    font-size: 16px;
+  }
+  .artistdetail-page .contents img {
+    height: 370px;
+  }
+  .artistdetail-page .works {
+    overflow-x: scroll;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .artistdetail-page .works img {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

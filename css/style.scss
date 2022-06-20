@@ -905,6 +905,9 @@ footer{
             .artists{
                 width: 100%;
                 margin-bottom: 16px;
+                .h2_body{
+                    font-size: 18px;
+                }
                 .h3_body{
                     font-size: 18px;
                     i{
@@ -1305,6 +1308,72 @@ footer{
         gap: 18px;
         img{
             width: 100%;
+        }
+    }
+}
+
+// medium size
+@media screen and (max-width: 1300px){
+    .artistdetail-page{
+        .contents{
+            .h3_body{
+                font-size: 16px;
+            }
+            img{
+                width: 42%;
+            }
+            .details{
+                width: 56%;
+                .sns_booking{
+                    margin-top: 20px;
+                }
+                a.bookBtn{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+// medium size
+@media screen and (max-width: 1030px){
+    .artistdetail-page{
+        .contents{
+            .h3_body{
+                font-size: 18px;
+            }
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            img{
+                width: 100%;
+            }
+            .details{
+                margin-top: 20px;
+                width: 100%;
+            }
+        }
+        .works{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+// mobile size
+@media screen and (max-width: 768px){
+    .artistdetail-page{
+        .contents{
+            .h3_body{
+                font-size: 16px;
+            }
+            img{
+                height: 370px;
+            }
+        }
+        .works{
+            overflow-x: scroll;
+            display: flex;
+            img{
+                width: 100%;
+            }
         }
     }
 }
