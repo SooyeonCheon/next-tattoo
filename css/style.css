@@ -1506,6 +1506,24 @@ footer .contacts .infos .hours span {
 }
 
 /******************** Artist detail page ************************/
+.artistdetail-page .page_main_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-items: center;
+}
+
+.artistdetail-page .page_main_header a {
+  text-decoration: none;
+}
+
+.artistdetail-page .page_main_header .fa-angle-left {
+  display: none;
+  color: #ffffff;
+  font-size: 40px;
+  margin-right: 35px;
+}
+
 .artistdetail-page .page_header_title {
   margin-bottom: 16px;
 }
@@ -1635,6 +1653,12 @@ footer .contacts .infos .hours span {
 }
 
 @media screen and (max-width: 768px) {
+  .artistdetail-page .page_main_header .fa-angle-left {
+    display: block;
+  }
+  .artistdetail-page .page_header_title {
+    margin-bottom: 5px;
+  }
   .artistdetail-page .contents .h3_body {
     font-size: 16px;
   }

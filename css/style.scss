@@ -1259,6 +1259,19 @@ footer{
 
 /******************** Artist detail page ************************/
 .artistdetail-page{
+    .page_main_header{
+        display: flex;
+        place-items: center;
+        a{
+            text-decoration: none;
+        }
+        .fa-angle-left{
+            display: none;
+            color: #ffffff;
+            font-size: 40px;
+            margin-right: 35px;
+        }
+    }
     .page_header_title{
         margin-bottom: 16px;
     }
@@ -1360,6 +1373,14 @@ footer{
 // mobile size
 @media screen and (max-width: 768px){
     .artistdetail-page{
+        .page_main_header{
+            .fa-angle-left{
+                display: block;
+            }
+        }
+        .page_header_title{
+            margin-bottom: 5px;
+        }
         .contents{
             .h3_body{
                 font-size: 16px;
