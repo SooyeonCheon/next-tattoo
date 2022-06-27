@@ -159,6 +159,8 @@ body {
   color: #F8C246;
   border-bottom: 1px solid #F8C246;
   font-size: 22.5px;
+  background-color: #0E0E0E;
+  border: 1px solid #F8C246;
 }
 
 .main_menu #toggleBtn {
@@ -242,8 +244,10 @@ body {
   }
   .main_menu .menus a.bookBtn:hover {
     color: #F8C246;
-    border-bottom: 1px solid #F8C246;
+    border: 1px solid #F8C246;
     font-size: 18px;
+    color: #F8C246;
+    background-color: #0E0E0E;
   }
   .main_header {
     padding: 200px 10.5%;
