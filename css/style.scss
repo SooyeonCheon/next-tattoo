@@ -462,13 +462,22 @@ footer{
                 }
             }
             .sns{
+                display: flex;
                 margin-top: 18px;
                 i{
                     font-size: 24px;
                     margin-right: 22px;
                     transition: 0.3s;
+                        padding-top: 3px;
                     &:hover{
                         color: $second-color;
+                        cursor: pointer;
+                    }
+                }
+                svg{
+                    transition: 0.3s;
+                        &:hover{
+                        fill: $second-color;
                         cursor: pointer;
                     }
                 }
@@ -804,6 +813,9 @@ footer{
                 background-color: #ffffff;
                 color: $main-color;
                 cursor: pointer;
+                svg{
+                    fill: $main-color;
+                }
                 .blue-color{
                     color: blue;
                     text-decoration: underline;
@@ -812,6 +824,10 @@ footer{
             i{
                 font-size: 35px;
                 margin-bottom: 24px;
+            }
+            svg{
+                margin-bottom: 20px;
+
             }
             .h2_body{
                 margin-bottom: 8px;
@@ -839,9 +855,16 @@ footer{
                 &:hover{
                     background-color: #ffffff;
                     color: $main-color;
+                    svg{
+                        fill: $main-color;
+                    }
                     a{
                         color: $main-color;
                     }
+                }
+                .h3_body{
+                    display: flex;
+                    place-items: center;
                 }
                 .name{
                     margin-bottom: 16px;
@@ -852,6 +875,9 @@ footer{
                 i{
                     margin-right: 10px;
                     font-size: 18px;
+                }
+                svg{
+                    margin-right: 8px;
                 }
                 a{
                     color: #ffffff;
@@ -876,6 +902,11 @@ footer{
                         margin-right: 5px;
                         font-size: 14px;
                     }
+                    svg{
+                        margin-right: 3px;
+                        width: 18px;
+                        height: 18px;
+                    }
                 }
             }
         }
@@ -894,6 +925,9 @@ footer{
                     font-size: 32px;
                     margin-bottom: 16px;
                 }
+                svg{
+                    margin-bottom: 16px;
+                }
                 .h2_body{
                     margin-bottom: 4px;
                 }
@@ -910,9 +944,16 @@ footer{
                 }
                 .h3_body{
                     font-size: 18px;
+                    display: flex;
+                    place-items: center;
                     i{
                         margin-right: 10px;
                         font-size: 18px;
+                    }
+                    svg{
+                        margin-right: 8px;
+                        width: 24px;
+                        height: 24px;
                     }
                 }
                 img{
@@ -946,11 +987,16 @@ footer{
                     text-decoration: underline;
                     color: blue;
                 }
-                
+                svg{
+                    fill: $main-color;
+                }
             }
             i{
                 font-size: 35px;
                 margin-bottom: 24px;
+            }
+            svg{
+                margin-bottom: 20px;
             }
             .h2_body{
                 margin-bottom: 8px;
@@ -1021,6 +1067,9 @@ footer{
                 margin-bottom: 16px;
                 i{
                     font-size: 32px;
+                    margin-bottom: 15px;
+                }
+                svg{
                     margin-bottom: 15px;
                 }
                 .h2_body{
@@ -1186,7 +1235,7 @@ footer{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 24px;
-        background-color: rgba(255, 255, 255, 0.008);
+        //background-color: rgba(255, 255, 255, 0.008);
         .artist_img{
             position: relative;
             z-index: 3;
@@ -1295,14 +1344,12 @@ footer{
                 place-items: center;
                 justify-content: end;
             }
-            i.fa-brands{
-                color: #ffffff;
-                text-decoration: none;
-                font-size: 36px;
-                margin-right: 45px;
+            svg{
+                margin-right: 20px;
                 transition: 0.3s ease;
+                display: flex;
                 &:hover{
-                    color: $second-color;
+                    fill: $second-color;
                 }
             }
             a.bookBtn{

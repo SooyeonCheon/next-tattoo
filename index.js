@@ -3,7 +3,7 @@ window.addEventListener("scroll", function () {
   let navbar = document.querySelector(".scroll");
   if (window.pageYOffset > 0) {
     navbar.classList.add("nav-scroll");
-    navbar.style.transition = "0.5s";
+    navbar.style.transition = "0.1s";
   } else {
     navbar.classList.remove("nav-scroll");
   }

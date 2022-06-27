@@ -2,7 +2,6 @@ window.addEventListener("scroll", function () {
     let nav = document.querySelector(".sticky");
     if (window.pageYOffset > 0) {
       nav.classList.add("nav-sticky");
-      nav.style.transition = "0.5s";
     } else {
       nav.classList.remove("nav-sticky");
     }

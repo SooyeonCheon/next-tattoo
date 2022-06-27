@@ -554,6 +554,9 @@ footer .contacts .infos a:hover {
 }
 
 footer .contacts .infos .sns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: 18px;
 }
 
@@ -562,10 +565,21 @@ footer .contacts .infos .sns i {
   margin-right: 22px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  padding-top: 3px;
 }
 
 footer .contacts .infos .sns i:hover {
   color: #F8C246;
+  cursor: pointer;
+}
+
+footer .contacts .infos .sns svg {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+footer .contacts .infos .sns svg:hover {
+  fill: #F8C246;
   cursor: pointer;
 }
 
@@ -968,6 +982,10 @@ footer .contacts .infos .hours span {
   cursor: pointer;
 }
 
+.booking-page .contact_method .methods:hover svg {
+  fill: #0E0E0E;
+}
+
 .booking-page .contact_method .methods:hover .blue-color {
   color: blue;
   text-decoration: underline;
@@ -976,6 +994,10 @@ footer .contacts .infos .hours span {
 .booking-page .contact_method .methods i {
   font-size: 35px;
   margin-bottom: 24px;
+}
+
+.booking-page .contact_method .methods svg {
+  margin-bottom: 20px;
 }
 
 .booking-page .contact_method .methods .h2_body {
@@ -1028,8 +1050,19 @@ footer .contacts .infos .hours span {
   color: #0E0E0E;
 }
 
+.booking-page .contact_artist .artists .artist_contact:hover svg {
+  fill: #0E0E0E;
+}
+
 .booking-page .contact_artist .artists .artist_contact:hover a {
   color: #0E0E0E;
+}
+
+.booking-page .contact_artist .artists .artist_contact .h3_body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-items: center;
 }
 
 .booking-page .contact_artist .artists .artist_contact .name {
@@ -1043,6 +1076,10 @@ footer .contacts .infos .hours span {
 .booking-page .contact_artist .artists .artist_contact i {
   margin-right: 10px;
   font-size: 18px;
+}
+
+.booking-page .contact_artist .artists .artist_contact svg {
+  margin-right: 8px;
 }
 
 .booking-page .contact_artist .artists .artist_contact a {
@@ -1063,6 +1100,11 @@ footer .contacts .infos .hours span {
     margin-right: 5px;
     font-size: 14px;
   }
+  .booking-page .contact_artist .artists .h3_body svg {
+    margin-right: 3px;
+    width: 18px;
+    height: 18px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1079,6 +1121,9 @@ footer .contacts .infos .hours span {
   }
   .booking-page .contact_method .methods i {
     font-size: 32px;
+    margin-bottom: 16px;
+  }
+  .booking-page .contact_method .methods svg {
     margin-bottom: 16px;
   }
   .booking-page .contact_method .methods .h2_body {
@@ -1100,10 +1145,19 @@ footer .contacts .infos .hours span {
   }
   .booking-page .contact_artist .artists .h3_body {
     font-size: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    place-items: center;
   }
   .booking-page .contact_artist .artists .h3_body i {
     margin-right: 10px;
     font-size: 18px;
+  }
+  .booking-page .contact_artist .artists .h3_body svg {
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
   }
   .booking-page .contact_artist .artists img {
     display: none;
@@ -1148,9 +1202,17 @@ footer .contacts .infos .hours span {
   color: blue;
 }
 
+.contact-page .contact_method .methods:hover svg {
+  fill: #0E0E0E;
+}
+
 .contact-page .contact_method .methods i {
   font-size: 35px;
   margin-bottom: 24px;
+}
+
+.contact-page .contact_method .methods svg {
+  margin-bottom: 20px;
 }
 
 .contact-page .contact_method .methods .h2_body {
@@ -1240,6 +1302,9 @@ footer .contacts .infos .hours span {
   }
   .contact-page .contact_method .methods i {
     font-size: 32px;
+    margin-bottom: 15px;
+  }
+  .contact-page .contact_method .methods svg {
     margin-bottom: 15px;
   }
   .contact-page .contact_method .methods .h2_body {
@@ -1421,7 +1486,6 @@ footer .contacts .infos .hours span {
       grid-template-columns: repeat(2, 1fr);
   -webkit-column-gap: 24px;
           column-gap: 24px;
-  background-color: rgba(255, 255, 255, 0.008);
 }
 
 .artist-page .artists .artist_img {
@@ -1570,17 +1634,17 @@ footer .contacts .infos .hours span {
           justify-content: end;
 }
 
-.artistdetail-page .contents .details i.fa-brands {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 36px;
-  margin-right: 45px;
+.artistdetail-page .contents .details svg {
+  margin-right: 20px;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.artistdetail-page .contents .details i.fa-brands:hover {
-  color: #F8C246;
+.artistdetail-page .contents .details svg:hover {
+  fill: #F8C246;
 }
 
 .artistdetail-page .contents .details a.bookBtn {
